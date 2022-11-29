@@ -1,0 +1,63 @@
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    overflow: hidden;
+  }
+  body{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .header {
+    box-sizing: border-box;
+    max-height: 100vh;
+    padding: 30vw 0 5vw;
+    position: relative;
+    transform: inherit;
+   width: 100vw;
+  }
+  header h1{
+    margin-top: -100px;
+  }
+  header, header::before{
+    background: 50% 50%/ cover;
+  }
+  header::before{
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-image: url(/Header-bg.jpg);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+  }
+  header *{
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;}
+
+    .navbar {
+      gap: 50px;
+      list-style: none;
+      justify-content: center;
+      display: flex;
+      font-size: 17px;
+      font-family: "Montserrat", sans-serif;
+      position: fixed;
+      width: 100%;
+      left: 0;
+      padding: 1rem;
+    }
